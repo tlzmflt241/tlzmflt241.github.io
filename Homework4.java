@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class calc2{
+class calc2{ //나눗셈을 통해 gcd 구하는 알고리즘을 담은 클래스
     int gcd(int a, int b){
         if(b == 0) {return a;}
         else if(a > b){return gcd(b, a%b);}
@@ -10,10 +10,8 @@ class calc2{
 
 public class Homework4 {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        calc2 calc = new calc2();
-
-
+        Scanner sc = new Scanner(System.in); //입력을 위한 스캐너
+        calc2 calc = new calc2(); //gcd 계산 객체 생성
 
         System.out.print("두 수를 입력하세요: ");
         int num1 = sc.nextInt();
